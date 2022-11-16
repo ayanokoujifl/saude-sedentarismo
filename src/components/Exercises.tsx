@@ -1,4 +1,9 @@
-import { PersonSimpleRun, Barbell, Paperclip, ArrowDown } from 'phosphor-react'
+import {
+  PersonSimpleRun,
+  Barbell,
+  Paperclip,
+  HandPointing
+} from 'phosphor-react'
 
 export function Exercises() {
   return (
@@ -10,7 +15,12 @@ export function Exercises() {
             <h4 className="font-league tracking-wide text-2xl capitalize text-cyan-800">
               Calistenia
             </h4>
-            <ArrowDown size={14} color="#1f2e70" weight="bold" />
+            <HandPointing
+              size={14}
+              color="#1f2e70"
+              weight="bold"
+              className="ml-[-8px]"
+            />
           </div>
           <iframe
             width={300}
@@ -37,7 +47,12 @@ export function Exercises() {
             <h4 className="font-league tracking-wide text-2xl capitalize text-cyan-800 ">
               Caminhada
             </h4>
-            <ArrowDown size={14} color="#1f2e70" weight="bold" />
+            <HandPointing
+              size={14}
+              color="#1f2e70"
+              weight="bold"
+              className="ml-[-8px]"
+            />
           </div>
           <iframe
             width={300}
@@ -55,7 +70,12 @@ export function Exercises() {
             <h4 className="font-league tracking-wide text-2xl capitalize text-cyan-800">
               Ginástica laboral
             </h4>
-            <ArrowDown size={14} color="#1f2e70" weight="bold" />
+            <HandPointing
+              size={14}
+              color="#1f2e70"
+              weight="bold"
+              className="ml-[-8px]"
+            />
           </div>
           <iframe
             width={300}
