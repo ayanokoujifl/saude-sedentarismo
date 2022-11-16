@@ -9,7 +9,7 @@ function App() {
   visibility()
   return (
     <>
-      <div className="bg-cyan-100 min-h-screen">
+      <div className="bg-cyan-100 min-h-screen max-h-screen overflow-hidden">
         <img
           src={lineTopRight}
           alt="linha topo direita"

@@ -1,11 +1,16 @@
+import { PersonSimpleRun, Barbell, Paperclip } from 'phosphor-react'
+
 export function Exercises() {
   return (
     <>
       <div className="w-screen mt-10" id="card-videos">
         <div className="flex flex-col justify-center items-center gap-4 py-5">
-          <h4 className="font-league tracking-wide text-2xl capitalize text-cyan-800 calistenia">
-            Calistenia
-          </h4>
+          <div className="flex items-center gap-2 calistenia">
+            <Barbell size={24} color="#155e75" weight="bold" />
+            <h4 className="font-league tracking-wide text-2xl capitalize text-cyan-800">
+              Calistenia
+            </h4>
+          </div>
           <iframe
             width={300}
             height={200}
@@ -26,9 +31,12 @@ export function Exercises() {
         </div>
 
         <div className="flex flex-col justify-center items-center gap-3 py-5">
-          <h4 className="font-league tracking-wide text-2xl capitalize text-cyan-800 caminhada">
-            Caminhada
-          </h4>
+          <div className="flex items-center gap-2 caminhada">
+            <PersonSimpleRun size={24} color="#155e75" />
+            <h4 className="font-league tracking-wide text-2xl capitalize text-cyan-800 ">
+              Caminhada
+            </h4>
+          </div>
           <iframe
             width={300}
             height={200}
@@ -40,9 +48,12 @@ export function Exercises() {
         </div>
 
         <div className="flex flex-col justify-center items-center gap-3 py-5">
-          <h4 className="font-league tracking-wide text-2xl capitalize text-cyan-800 laboral">
-            Ginástica laboral
-          </h4>
+          <div className="flex items-center gap-2 laboral">
+            <Paperclip size={24} color="#155e75" weight="bold" />
+            <h4 className="font-league tracking-wide text-2xl capitalize text-cyan-800">
+              Ginástica laboral
+            </h4>
+          </div>
           <iframe
             width={300}
             height={200}
