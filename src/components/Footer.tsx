@@ -14,7 +14,7 @@ export function Footer() {
       <a
         href="https://www.instagram.com/saude.sedentarismo/"
         target="_blank"
-        className="absolute bottom-4 flex gap-6"
+        className="absolute bottom-4 flex gap-6 underline"
       >
         <InstagramLogo size={24} color="#155e75" weight="bold" />
         <p className="text-cyan-800 font-extrabold">@saude.sedentarismo</p>
