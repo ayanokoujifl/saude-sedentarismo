@@ -1,10 +1,14 @@
 export const visibility = () => {
-  window.addEventListener('load', () => {
-    const div = document.querySelector('#card-video')
-    const calisteniaVideo =
-      document.querySelectorAll<HTMLElement>('.calistenia-video')
-    const calistenia = document.querySelector('.calistenia')
+  const calisteniaVideo =
+    document.querySelectorAll<HTMLElement>('.calistenia-video')
+  const calistenia = document.querySelector('.calistenia')
+  const caminhadaVideo =
+    document.querySelectorAll<HTMLElement>('.caminhada-video')
+  const caminhada = document.querySelector('.caminhada')
+  const laboralVideo = document.querySelectorAll<HTMLElement>('.laboral-video')
+  const laboral = document.querySelector('.laboral')
 
+  window.addEventListener('load', () => {
     calisteniaVideo.forEach((video) => {
       video.style.display = 'none'
     })
@@ -13,16 +17,12 @@ export const visibility = () => {
       calisteniaVideo.forEach((video) => {
         video.style.display = 'block'
       })
-    })
-    calistenia?.addEventListener('mouseover', () => {
-      calisteniaVideo.forEach((video) => {
-        video.style.display = 'none'
+    }),
+      calistenia?.addEventListener('mouseover', () => {
+        calisteniaVideo.forEach((video) => {
+          video.style.display = 'none'
+        })
       })
-    })
-
-    const caminhadaVideo =
-      document.querySelectorAll<HTMLElement>('.caminhada-video')
-    const caminhada = document.querySelector('.caminhada')
 
     caminhadaVideo.forEach((video) => {
       video.style.display = 'none'
@@ -39,23 +39,18 @@ export const visibility = () => {
       })
     })
 
-    const laboralVideo =
-      document.querySelectorAll<HTMLElement>('.laboral-video')
-    const laboral = document.querySelector('.laboral')
-
     laboralVideo.forEach((video) => {
       video.style.display = 'none'
-    })
-
-    laboral?.addEventListener('click', () => {
-      laboralVideo.forEach((video) => {
-        video.style.display = 'block'
+    }),
+      laboral?.addEventListener('mouseenter', () => {
+        laboralVideo.forEach((video) => {
+          video.style.display = 'block'
+        })
+      }),
+      laboral?.addEventListener('mouseover', () => {
+        laboralVideo.forEach((video) => {
+          video.style.display = 'none'
+        })
       })
-    })
-    laboral?.addEventListener('mouseover', () => {
-      laboralVideo.forEach((video) => {
-        video.style.display = 'none'
-      })
-    })
   })
 }

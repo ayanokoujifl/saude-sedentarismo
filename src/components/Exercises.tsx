@@ -4,8 +4,8 @@ export function Exercises() {
   return (
     <>
       <div className="w-screen mt-10" id="card-videos">
-        <div className="flex flex-col justify-center items-center gap-4 py-5">
-          <div className="flex items-center gap-2 calistenia">
+        <div className="flex flex-col justify-center items-center gap-4 mt-5 calistenia">
+          <div className="flex items-center gap-2 ">
             <Barbell size={24} color="#155e75" weight="bold" />
             <h4 className="font-league tracking-wide text-2xl capitalize text-cyan-800">
               Calistenia
@@ -30,8 +30,8 @@ export function Exercises() {
           ></iframe>
         </div>
 
-        <div className="flex flex-col justify-center items-center gap-3 py-5">
-          <div className="flex items-center gap-2 caminhada">
+        <div className="flex flex-col justify-center items-center gap-3 mt-5 caminhada">
+          <div className="flex items-center gap-2 ">
             <PersonSimpleRun size={24} color="#155e75" />
             <h4 className="font-league tracking-wide text-2xl capitalize text-cyan-800 ">
               Caminhada
@@ -47,8 +47,8 @@ export function Exercises() {
           ></iframe>
         </div>
 
-        <div className="flex flex-col justify-center items-center gap-3 py-5">
-          <div className="flex items-center gap-2 laboral">
+        <div className="flex flex-col justify-center items-center gap-3 mt-5 laboral">
+          <div className="flex items-center gap-2 ">
             <Paperclip size={24} color="#155e75" weight="bold" />
             <h4 className="font-league tracking-wide text-2xl capitalize text-cyan-800">
               Ginástica laboral

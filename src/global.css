@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.calistenia-video,
+.caminhada-video,
+.laboral-video {
+  display: none;
+}
+
+.calistenia:hover .calistenia-video,
+.caminhada:hover .caminhada-video,
+.laboral:hover .laboral-video {
+  display: block;
+}
